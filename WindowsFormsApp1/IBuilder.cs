@@ -244,13 +244,28 @@ namespace WindowsFormsApp1
             set { _computerbuilder = value; }
         }
 
-        public void constructComputer(string A, string B, string C, string D, string E, string F)
+        public void MinComputerBuilder(string A, string B, string C, string D, string E, string F)
         {
             this._computerbuilder.BuildPartA(A);
             this._computerbuilder.BuildPartB(B);
             this._computerbuilder.BuildPartC(C);
             this._computerbuilder.BuildPartD(D);
             this._computerbuilder.BuildPartE(E);
+            this._computerbuilder.BuildPartF(F);
+        }
+        public void WorkstationComputerBuilder(string A, string B, string C, string D, string E, string F)
+        {
+            this._computerbuilder.BuildPartA(A);
+            this._computerbuilder.BuildPartB(B);
+            this._computerbuilder.BuildPartC(C);
+            this._computerbuilder.BuildPartE(E);
+            this._computerbuilder.BuildPartF(F);
+        }
+        public void GamimgComputerBuilder(string A, string B, string C, string D, string E, string F)
+        {
+            this._computerbuilder.BuildPartA(A);
+            this._computerbuilder.BuildPartB(B);
+            this._computerbuilder.BuildPartC(C);
             this._computerbuilder.BuildPartF(F);
         }
     }

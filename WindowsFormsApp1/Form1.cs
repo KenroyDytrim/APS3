@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
                     {
                         builder = new MinComputerBuilder();
                         director.Builder = builder;
-                        director.constructComputer(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
+                        director.MinComputerBuilder(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
                         collection1.Add(builder);
                         Coll1.Items.Add($"{Coll1.Items.Count+1} компьютер");
                         result.Text = "Компьютер с минимальной сборкой собран";
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
                     {
                         builder = new WorkstationComputerBuilder();
                         director.Builder = builder;
-                        director.constructComputer(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
+                        director.WorkstationComputerBuilder(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
                         collection1.Add(builder);
                         Coll1.Items.Add($"{Coll1.Items.Count + 1} компьютер");
                         result.Text = "Компьютер с рабочей сборкой собран";
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
                     {
                         builder = new GamingComputerBuilder();
                         director.Builder = builder;
-                        director.constructComputer(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
+                        director.GamimgComputerBuilder(textBoxA.Text, textBoxB.Text, textBoxC.Text, textBoxD.Text, textBoxE.Text, textBoxF.Text);
                         collection1.Add(builder);
                         Coll1.Items.Add($"{Coll1.Items.Count + 1} компьютер");
                         result.Text = "Компьютер с игровой сборкой собран";
